@@ -11,6 +11,9 @@ NLP
 
     from nltk.corpus import stopwords
     stopwords.words('english')[0:10]
+    
+    from sklearn.feature_extraction.text import CountVectorizer
+    from sklearn.metrics.pairwise import cosine_similarity
 
     from sklearn.model_selection import train_test_split
     from sklearn.metrics import classification_report, confusion_matrix, accuracy_score
